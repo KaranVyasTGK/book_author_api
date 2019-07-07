@@ -1,0 +1,9 @@
+<%= form_tag('/search', remote: true) do %>
+  <%= text_field_tag :query %>
+  <%= submit_tag :search %>
+<% end %>
+
+
+<div class="list">
+	<%= render 'books_records' %>
+</div>
